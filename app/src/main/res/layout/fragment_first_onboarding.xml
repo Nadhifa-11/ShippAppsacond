@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_first_onboarding">
+
+    <ImageView
+        android:id="@+id/iv_onboard1"
+        android:layout_width="241dp"
+        android:layout_height="272dp"
+        android:layout_marginLeft="@dimen/_67dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:src="@drawable/onb1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_onb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_400dp"
+        android:layout_marginRight="@dimen/_50dp"
+        android:text="@string/txt_onb1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

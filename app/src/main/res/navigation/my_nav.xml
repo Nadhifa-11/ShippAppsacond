@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashActivity">
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.nadhifa.shippapp.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.nadhifa.shippapp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fragment_first_onboarding"
+        android:name="com.nadhifa.shippapp.fragment_first_onboarding"
+        android:label="fragment_first_onboarding"
+        tools:layout="@layout/fragment_first_onboarding" >
+        <action
+            android:id="@+id/action_fragment_first_onboarding_to_fragment_second_onboarding3"
+            app:destination="@id/fragment_second_onboarding" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_second_onboarding"
+        android:name="com.nadhifa.shippapp.fragment_second_onboarding"
+        android:label="fragment_second_onboarding"
+        tools:layout="@layout/fragment_second_onboarding" >
+        <action
+            android:id="@+id/action_fragment_second_onboarding_to_fragment_third_onboarding2"
+            app:destination="@id/fragment_third_onboarding" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_third_onboarding"
+        android:name="com.nadhifa.shippapp.fragment_third_onboarding"
+        android:label="fragment_third_onboarding"
+        tools:layout="@layout/fragment_third_onboarding" >
+        <action
+            android:id="@+id/action_fragment_third_onboarding_to_mainActivity2"
+            app:destination="@id/mainActivity" />
+    </fragment>
+</navigation>
